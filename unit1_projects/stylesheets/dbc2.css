@@ -1,0 +1,36 @@
+body{
+	font-family: arial;
+	background-color: #F0DFFF;
+}
+
+#content {
+	text-align: center;
+	float: right;
+}
+
+#header {
+	background-color: #66FFFF;
+	margin: 5px;
+	padding: 5px;
+	font-size: 24px;
+	text-align: center;
+	height: 150px;
+}
+
+#sidebar {
+	right:0;
+	float: left;
+	margin: 10px;
+	background-color: #66FFFF;
+	width: 200px;
+	height: 700px;
+	text-align: center;
+}
+
+#footer { 
+	clear: both;
+	background: #66FFFF;
+	padding: 5px;
+	text-align: center;
+}
+
