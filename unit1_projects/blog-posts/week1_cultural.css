@@ -1,20 +1,20 @@
 body {
   margin: 0;
   padding: 0;
-  background: #F781F3
+  background: #000099
 }
 
-/*#wrapper {
+#wrapper {
 	width: 760px;
 	margin-right: auto;
 	margin-left: auto;
 	background: #000099;
-}*/
+}
 
 #header {
 	margin-right: auto;
 	margin-left: auto;
-	background: #6A0888;
+	background: #6B6B96;
 }
 
 #sidebar {
@@ -22,28 +22,28 @@ body {
 	margin-left: 10px; 
 	width: 160px; 
 	display: inline;
-	background: #6A0888;
+	background: #9999D6;
 }
 
 #main {
    float: left;
    width: 550px;
    padding-left: 10px;
-   background: #6A0888;
+   background: #9999D6;
 }
 
-/*#space {
+#space {
 	height: 50px;
 	clear: both;
 	background: #000099;
 }
-*/
+
 #footer {
 	clear: both;
     position: relative;
     bottom: 0;
     height: 3em;
     margin-top: -3em;
-	background: #6A0888;
+	background: #6B6B96;
 
 }
