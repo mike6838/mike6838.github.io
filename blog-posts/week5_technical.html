@@ -86,15 +86,49 @@
 
 		<body>
 			<div id="main">
-				<h2>Week 2 - Technical Blog</h2>
+				<h2>Week 5 - Technical Blog</h2>
 				<hr/>
-				<h3>The Differences Between Margin, Border, and Padding</h3>
-				<p>Within HTML (Hypertext Markup Language), content is separated into a series of different elements in order to help the web developer/designer manipulate the content into a viewable webpage. For instance, HTML provides element tags with titles such as, “header,” “body,” and “footer.” In order to avoid confusion, it would be preferable for both the developer and consumer that the header is above the body, while the body is above the footer. HTML allows for this. But what if you wanted additional space between the body and header, or if there were three sections in the body that you wanted the reader to determine that they are clearly separate from each other? In order to do this, each element makes use of three variables, margin, border, and padding, to achieve the desired placement of the content relative to other content on a webpage. </p>
-				<p>The border is the (visible or invisible) area that surrounds your content. Padding is the space between your content and border, while the margin is the transparent space between your border and other content or borders on your webpage. Below is an example of how these three variables are used to move content around. </p>
-				<img src="image/tree_example.png" alt="" />
-				<p>As you can see above, content is represented as an image of a tree. The border is the light green line that surrounds the content, while the padding is the red space that separates the content from the border. The light blue represents the margin, which is the amount of space between the content of one element relative to the content of all the other elements on the page. </p>
+				<h3>Ruby Classes</h3>
+				<p>Like many other computer programming languages, Ruby uses classes as a way to organize methods. Ruby has many built in classes, like FixNum, String, and Array. Each of the built in classes in Ruby come with predefined methods that are used to manipulate data within those classes. As with the rest of Ruby, classes are objects and can be manipulated with methods as well. </p>
+				<p>Using classes when developing applications is useful because the methods that are defined within the class can only be used in that class. This helps applications become more modular in their design and less dependent on other code within the application. This is positive because if one part of the application needs to be changed, you’ll be able to rest easy in knowing that there’s not a ton of other methods or classes relying on that particular class and if changing it, the entire application won’t break.</p>
+				<p>It is often recommended that for well-designed code, classes should have a single purpose. When every method within a class contributes to the central purpose of that class, the code is considered highly cohesive. This is a good thing because it’s well organized and easy to read. </p>
+				<p>Below is an example of a class that we can use to help us calculate the perimeter and area of a square based on the side length.</p>
+				<section>
+					<h5>class Square</h5>
+					<span>
+						<h5>def initialize(side_length)</h5>
+						<span><h5>@side_length = side_length</h5></span>
+						<h5>end</h5>
+						<br>
+						<h5>def side_length</h5>
+						<span><h5>@side_length</h5></span>
+						<h5>end</h5>
+						<br>
+						<h5>def perimeter</h5>
+						<span><h5>perimeter = (@side_length * 4)</h5></span>
+						<h5>end</h5>
+						<br>
+						<h5>def area</h5>
+						<span><h5>area = (@side_length * @side_length)</h5></span>
+						<h5>end</h5>
+					</span>
+					<h5>end</h5>
+				</section>
+				<p>The first line in the above example is where the class is defined. In this case, I’ve named the class Square. Below the class name are four instance methods: initialize, side_length, perimeter, and area. These methods can only be used on an object of the Square class.  The initialize method is used to create a new square object and side_length is the argument that is used to define the variable. For example, to create a new square, I would type:</p>
+				<section>
+					<h5>my_own_square = Square.new(5)</h5>
+				</section>
+				<p>Here I have a new square with the side length of 5.</p>
+				<p>If I wanted to learn the perimeter and area, I could call the two instance methods I defined above. For instance,</p>
+				<section>
+					<h5>p my_own_square.perimeter # return >> 20</h5>
+					<h5>p my_own_square.area  #return >> 25</h5>
+				</section>
+				<p>When I call the perimeter and area method on my_own_square object, it returns the values of the my square’s perimeter and area.</p>
 			</div>
 		</body>
+
+	
 
 		<footer>
 			<h6>Copyright 2014, Chasing the Rabbit | Michael Teevan.</h6>
