@@ -146,10 +146,12 @@ body {
 	}
 
 	#main h5 {
+		color: #fff;
 		text-indent: 100px;
 		font-family: courier;
 		font-size: 12px;
-		font-weight: 400;
+		font-weight: 500;
+		letter-spacing: 1px;
 		padding: 1px;
 		margin: 2px;
 	}
@@ -160,8 +162,11 @@ body {
 	}
 
 .box-container {
-	width:400px;
+	width:600px;
  	border:1px solid #000;
+ 	margin-left: 100px;
+ 	background-color: #a16b66;
+ 	padding: 10px;
 }
 
 footer {

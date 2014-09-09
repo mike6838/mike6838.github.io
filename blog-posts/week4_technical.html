@@ -92,12 +92,16 @@
 				<h3>Enumerable#map</h3>
 				<p>The .map method is a very convenient built in Ruby method that allows you to make an exact copy of the object that is being called on. I find myself most often using the map method when iterating over arrays. Since the map method makes a copy of the object, the output gives us the data after it's been manipulated, where as a method like #each would give us the original data.</p>
 				<p>Here's an example,</p>
-				<h5>001 >[2, 4, 6].map { | i | i * 2 }</h5>
-				<h5>=> [4, 8, 12]</h5>
+				<section class="box-container">
+					<h5>001 >[2, 4, 6].map { | i | i * 2 }</h5>
+					<h5>=> [4, 8, 12]</h5>
+				</section>
 				<p>Iterating over the same data using the each method, instead of map, would give us the original data.</p>
 				<p>Like so,</p>
-				<h5>002 >[2, 4, 6].each { | i | i * 2 }</h5>
-				<h5>=> [2, 4, 6]</h5>
+				<section class="box-container">
+					<h5>002 >[2, 4, 6].each { | i | i * 2 }</h5>
+					<h5>=> [2, 4, 6]</h5>
+				</section>
 				<p>In conclusion, the map method is a very useful and convenient method to use when manipulating data.</p>
 			</div>
 
