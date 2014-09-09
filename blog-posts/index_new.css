@@ -7,6 +7,8 @@
 #bfb5b2 - grayish-brown
 */
 
+/*Blogs*/
+
 
 
 header {
@@ -78,7 +80,7 @@ nav {
 		display: block; 
 		padding: 0px 10px;
 		margin: 5px;
-		color: #a16b66; 
+		color: black; 
 		text-decoration: none;
 	}
 
@@ -200,11 +202,11 @@ p {
 
 a:link {
 	text-decoration: none;
-	color: #a16b66;
+	color: black;
 }
 
 a:hover {
-	color: #bfb5b2;
+	color: #a16b66;
 }
 
 a:visited {

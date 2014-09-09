@@ -26,18 +26,18 @@ header {
 	background: #6eb397;
 }
 
-header h1 {
-	text-align: center;
-}
+	header h1 {
+		text-align: center;
+	}
 
-header h2 {
-	text-align: center;
-	font-size: 12px;
-	font-weight: 400;
-	letter-spacing: 1px;
-	margin-top: -25px;
-	margin-bottom: 2px;
-}
+	header h2 {
+		text-align: center;
+		font-size: 12px;
+		font-weight: 400;
+		letter-spacing: 1px;
+		margin-top: -25px;
+		margin-bottom: 2px;
+	}
 
 hr {
     display: block;
