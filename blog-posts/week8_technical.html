@@ -91,8 +91,33 @@
 			</div>
 			<div id="main">
 				<h3>Recursion</h3>
-				<p></p>
-
+				<p>Recursion is when a method will call itself as long as the defined base case is not met. A popular example of a recursive method is to create a factorial function. To start, the mathematical function of a factorial is:</p>
+				<section class="box-container">
+					<h5>n! = 1 (when n==0)</h5>
+					<h5>(otherwise)</h5>
+					<h5> = n * (n-1)!</h5>
+				</section>
+				<p>If I were to use the above function, it would look like this:</p>
+				<section class="box-container">
+					<h5>5! = 5 * 4 * 3 * 2 * 1 = 120</h5>
+				</section>
+				<p>In order to get the factorial of 5 using recursion, we could write method in Ruby like this:</p>
+				<section class="box-container">
+					<h5>def factorial(n)</h5>
+					<span>
+						<h5>if n == 0 # => defined base</h5>
+						<span><h5>return 1</h5></span>
+						<h5>else</h5>
+						<span><h5>factorial(n-1) * n # => calling itself as long as the base isn't met</h5></span>
+						<h5>end</h5>
+					</span>
+					<h5>end</h5>
+					<br>
+					<h5>puts factorial(5)</h5>
+					<br>
+					<h5> => 120 </h5>
+				</section>
+				<p>Recursion is very similar to iterations using while loops and for loops and sometimes it’s more appropriate to use a loop instead of recursion. Since the above example uses what is called <a href="http://en.wikipedia.org/wiki/Tail_call">tail call</a> recursion, we are unable to write a while loop to create a factorial method. Although there are some other built in methods for Ruby that would allow us to write a method that carries out a factorial function without using recursion.</p>
 			</div>
 
 		</body>
