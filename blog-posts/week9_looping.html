@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
-	<div id="wrapper">
+	<div>
 		<head>
 			<title>Chasing The Rabbit</title>
 			<link rel="stylesheet" type="text/css" href="index_new.css">
@@ -71,7 +71,6 @@
 							<ul>
 								<li><a href="http://mike6838.github.io/blog-posts/week8_technical.html">Technical Blog</a></li>
 								<li><a href="http://mike6838.github.io/blog-posts/week8_cultural_blog.html">Cultural Blog</a></li>
-								<li><a href="http://mike6838.github.io/blog-posts/week8_blog_update.html">Blog Update</a></li>
 							</ul>
 						</li>
 						<li>
@@ -87,60 +86,56 @@
 
 		<body>
 			<div id="title">
-				<h2>Week 7 - Technical Blog</h2>
+				<h2>Week 9 - Technical Blog</h2>
 			</div>
 			<div id="main">
-				<h3>SQL vs NoSQL</h3>
-				<p>SQL refers to relational database models, which are databases that store information and also how it that information is related. Relational databases use schemas to organize information. Each schema is a table that has the ability to relate to other tables based on a certain ID.</p>
-					<table>
-						<tr>
-							<th>Pros</th>
-							<th>Cons</th>
-						</tr>
-						<tr>
-							<td>
-								<ul> <!-- SQL Pros -->
-									<li>SQL databases take advantage of structured query language to access data, which has decades of support</li>
-									<li>High ability to manipulate data</li>
-									<li>Vertically Scalability (i.e. performance improvements come from upgrades in hardware)</li>
-								</ul>
-							</td>
-							<td>
-								<ul> <!-- SQL Cons -->
-									<li>Limited to only handling structured data</li>
-									<li>Little ability to scale across multiple servers</li>
-									<li>More management required compared to NoSQL</li>
-								</ul>
-							</td>
-						</tr>
-					</table>
-				<p>The focus of NoSQL databases is to provide scalability, performance, and high availability. Unlike of relational databases, NoSQL organizes information much more broadly, which can be accessed quicker, although not as specific.</p>
-					<table>
-						<tr>
-							<th>Pros</th>
-							<th>Cons</th>
-						</tr>
-						<tr>
-							<td>
-								<ul> <!-- NoSQL Pros -->
-									<li>Can handle structured and unstructured data</li>
-									<li>More performance relative to SQL</li>
-									<li>Ability to take advantage of other query languages (other than SQL)</li>
-									<li>Horizontal Scalability (i.e. performance increases come from number of servers used to store data)</li>
-								</ul>
-							</td>
-							<td>
-								<ul> <!-- NoSQL Cons -->
-									<li>Less Functionality</li>
-									<li>No Joins Support</li>
-									<li>No Complex Transaction Support</li>
-									<li>No Constraints Support</li>
-								</ul>
-							</td>
-						</tr>
-					</table>
-				
-				<p></p>
+				<h3>Looping in JavaScript and Ruby</h3>
+				<p>Both Ruby and JS have the ability to loop. The major difference between these two languages are the different ways we can go about looping. For instance, JS has only two ways of looping, where as ruby has many more. Below is an example of a for loop in JS.</p>
+				<section class="box-container">
+					<h5>var someArray = [1, 2, 3, 4, 5];</h5>
+					<br>
+					<h5>var someForLoop = function(n) {</h5>
+					<span>
+						<h5>sum = 0</h5>
+						<h5>for (i = 0; i < n.length; i++) {</h5>
+							<span><h5>sum += n[i]</h5></span>
+						<h5>};</h5>
+						<h5>console.log(sum);</h5>
+					</span>
+					<h5>};</h5>
+					<br>
+					<h5>someForLoop(someArray)</h5>
+				</section>
+				<p>Above we have an array named someArray that we want to loop through and add all the values up. Within the array, we define a variable sum as 0, which we'll use to add all the elements of someArray. Underneath of where we defined the sum variable, we begin to write out for loop. I've defined i as zero, so that we can tell the function to continue as long as i is less than the length of the array we use as our argument, while everytime the loop is called, 1 will be added to i.</p>
+				<p>Below we have an example of a while loop in JS. </p>
+				<section class="box-container">
+					<h5>var someArray = [1, 2, 3, 4, 5];</h5>
+					<br>
+					<h5>var i = 0</h5>
+					<h5>var sum = 0</h5>
+					<h5>var someWhileLoop = function(n) {</h5>
+					<span>
+						<h5>while (n.length > i++) {</h5>
+						<span><h5>sum += n[i]</h5></span>
+						<h5>};</h5>
+						<h5>console.log(sum);</h5>
+					</span>
+					<h5>};</h5>
+					<br>
+					<h5>someWhileLoop(someArray)</h5>
+				</section>
+				<p>Above, you'll notice that I've defined the variables i and sum outside of the while loop function. This is because in a while loop, everytime it's called to loop, it resets the variables. Consequently, if we defined those two variables inside the function like we did with the for loop, the loop would never stop because i would never get above 0.</p>
+				<p> Below is an example of a built in Ruby method that facilitate looping. </p>
+				<section class="box-container">
+					<h5>some_array = [1, 2, 3, 4, 5]</h5>
+					<br>
+					<h5>def add(n)</h5>
+					<span><h5>puts n.inject(:+)</h5></span>
+					<h5>end</h5>
+					<br>
+					<h5>add(some_array) => 15</h5>
+				</section>
+				<p>The above example exemplifies some of the built in methods Ruby has that almost seem tailor made for certain jobs.</p>
 			</div>
 
 		</body>
